@@ -1,0 +1,7 @@
+<div class="history-wrapper">
+  <div class="history-item active" data-move="0">
+    <div class="history-item__board">
+      ${game.activeBoard.fields.map((row) => `<div class="history-item__row">${row.map((field) => `<div class="history-item__field ${field.type}"></div>`).join('')}</div>`).join('')}
+    </div>
+  </div>
+</div>
