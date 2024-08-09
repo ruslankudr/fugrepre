@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach Example</title>
+    <script>
+        function updateFields() {
+            const expr = {
+                $fields: ['field1', 'field2', 'field3']
+            };
+
+            const fields = {};
+
+            expr.$fields.forEach(name => fields[name] = 1);
+
+            console.log(fields);
+            // Output: { field1: 1, field2: 1, field3: 1 }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="updateFields()">Update Fields</button>
+</body>
+</html>
